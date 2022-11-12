@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="253dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="72dp"
+        android:text="Whats Weather"
+        android:textColor="#E70C0C"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="297dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter City"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="34dp"
+        android:text="Find Wether"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCity" />
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="274dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="center"
+        android:text="Main "
+        android:textColor="#F40404"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDesciption"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDesciption"
+        android:layout_width="275dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="Desciption"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#F90505"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMain"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
